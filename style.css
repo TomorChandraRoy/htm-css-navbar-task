@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior:smooth;
+}
+
+/* Header section Style */
+
+.navbar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    margin-top: 5px;
+    color: white;
+    background: linear-gradient(90deg, rgba(66,39,196,1) 0%, rgba(124,114,212,1) 73%);
+}
+
+.navbar-logo{
+    font-weight: 500;
+}
+
+.navbar-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.navbar-items li a{
+    text-decoration:none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-items li a:hover,
+.navbar-items li a.active{
+    color: rgb(17, 16, 16);
+    background: rgb(177, 83, 83);
+}
+
+.img-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-img{
+    border-radius: 50%;
+    width: 50%;
+    height: 30px;
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+    
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #f0f3f5;
+    border-radius: 50%;
+    margin: -10px 0;
+}
+
+.dotted-border {
+    width: 2px;
+    height: 40px;
+    border-left: 2px dotted #dfe2e4;
+    margin: 10px 0;
+}
+
+.circle-container-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    right: 250px;
+    bottom: 542px;
+}
+.circle-box {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: -10px 0;
+
+}
+.dotted-border-line{
+    width: 2px;
+    height: 40px;
+    border-left: 2px dotted blue;
+    margin: 10px 0;
+}
+
+/* main section css*/
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 80%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.slide {
+    min-width: 100%;
+    height: 300px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: white;
+    color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+    color: white;
+}
